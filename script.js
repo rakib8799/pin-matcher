@@ -1,3 +1,4 @@
+'use strict';
 let pinTextValue;
 const handleGeneratePin = function () {
     const pinText = handleInput('pin');
@@ -5,7 +6,7 @@ const handleGeneratePin = function () {
     pinText.value = randomValue;
     pinTextValue = parseInt(pinText.value);
 };
-document
+const buttonsParent = document
     .getElementById('buttons-parent')
     .addEventListener('click', function (event) {
         const digit = event.target.innerText;
